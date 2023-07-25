@@ -5,7 +5,7 @@
 
     sudo apt update && sudo apt install gcc -y && sudo apt install make -y
     ftpaddress=172.20.91.30
-    if grep -iq "20f1" /tmp/gpu-type; then
+    if grep -iq "20f1" /tmp/gpu-type; then   #this line check gpu id in a100 graphics #
       sudo wget ftp://$ftpaddress/GPU/Linux_64-bit/Tesla/a100/NVIDIA-Linux-x86_64-515.48.07.run 2> /dev/null
       sudo chmod +x NVIDIA-Linux-x86_64-515.48.07.run
       sudo ./NVIDIA-Linux-x86_64-515.48.07.run --ui=none -a -s -q
