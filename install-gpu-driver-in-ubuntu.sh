@@ -12,7 +12,7 @@
       sudo ./NVIDIA-Linux-x86_64-515.48.07.run --ui=none -a -s -q
       sleep 2
     elif grep -iq "2204" /tmp/gpu-type; then  #3090#
-      sudo wget ftp://$ftpaddress/GPU/Linux_64-bit/GeForce_RTX_3090_and_2080TI/NVIDIA-Linux-x86_64-515.57.run 2> /dev/null
+      sudo wget ftp://$ftpaddress/GPU/Linux_64-bit/GeForce_RTX_3090/NVIDIA-Linux-x86_64-515.57.run 2> /dev/null
       sudo chmod +x NVIDIA-Linux-x86_64-515.57.run
       sudo ./NVIDIA-Linux-x86_64-515.57.run --ui=none -a -s -q
       sleep 2
@@ -21,7 +21,7 @@
       sudo chmod +x NVIDIA-Linux-x86_64-515.65.01.run
       sudo ./NVIDIA-Linux-x86_64-515.65.01.run --ui=none -a -s -q
     elif grep -iq "1e07" /tmp/gpu-type; then #2080TI#
-      sudo wget ftp://$ftpaddress/GPU/Linux_64-bit/GeForce_RTX_3090_and_2080TI/NVIDIA-Linux-x86_64-535.86.05.run 2> /dev/null
+      sudo wget ftp://$ftpaddress/GPU/Linux_64-bit/GeForce_RTX_2080/NVIDIA-Linux-x86_64-535.86.05.run 2> /dev/null
       sudo chmod +x NVIDIA-Linux-x86_64-535.86.05.run
       sudo ./NVIDIA-Linux-x86_64-535.86.05.run --ui=none -a -s -q
     fi
